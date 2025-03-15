@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-gray-100 text-gray-900;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+nav {
+  @apply p-4 bg-gray-800 text-white flex justify-between items-center shadow-md;
+}
+
+/* Container */
+.container {
+  @apply max-w-5xl mx-auto p-4;
+}
+
+/* Restaurant List */
+.grid > a {
+  @apply block p-4 border border-gray-300 rounded-lg shadow-md bg-white transition transform hover:scale-105 hover:shadow-lg;
+}
+
+/* Restaurant Menu Items */
+.grid > div {
+  @apply p-4 border border-gray-300 rounded-lg shadow-md bg-white;
+}
+
+/* Buttons */
+button {
+  @apply mt-2 px-4 py-2 rounded font-semibold transition;
+}
+
+/* Primary Button (Add to Cart) */
+button.bg-blue-500 {
+  @apply hover:bg-blue-600 focus:ring focus:ring-blue-300;
+}
+
+/* Success Button (Checkout) */
+button.bg-green-500 {
+  @apply hover:bg-green-600 focus:ring focus:ring-green-300;
+}
+
+/* Cart */
+.cart {
+  @apply mt-6 p-4 border border-gray-300 rounded-lg shadow-lg bg-white;
+}
